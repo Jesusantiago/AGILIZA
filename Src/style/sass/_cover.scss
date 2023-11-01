@@ -1,0 +1,93 @@
+@use "var";
+@use "mixfun";
+
+.cover{
+    width: 80vw;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    row-gap: 35px;
+    padding-bottom: var.$m-s;
+    // margin-bottom: .5rem;
+
+
+    &_text{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &_title{
+            width: 100%;
+            font-family: var.$f-ff;
+            font-size: 1.8rem;
+            color: var.$c-primary;
+            line-height: 2rem;
+            text-align: center;
+            font-weight: var.$fw5;
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+        
+        &_subtitle{
+            width:100%;
+            line-height: 1.5rem;
+            height: 30%;
+            color: var.$c-white;            
+            font-family: var.$f-fs;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: var.$fw4;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .btn-cover{
+            @include mixfun.button(var.$c-secundary,var.$c-white,"text-aling");
+            transition: all 0.3s linear;
+
+            &:hover{
+                translate: 0 -5px;
+            }
+        }
+
+        .date-cover{
+            background-color: var.$c-secundary;
+            color: var.$c-white;
+
+            &:hover{
+                color: var.$c-secundary;
+                background-color: var.$c-white;
+            }
+        }
+
+        .demo-cover{
+            background-color: var.$c-white;
+            color: var.$c-secundary;
+            
+            &:hover{
+                color: var.$c-white;
+                background-color: var.$c-secundary;
+            }
+
+
+        }
+
+    }
+
+    &_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 70%;
+            height: 80%;
+        }
+
+    }
+
+}

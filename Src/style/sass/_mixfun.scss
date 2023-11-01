@@ -1,0 +1,48 @@
+@use "var";
+
+@mixin feed{
+    width: 100vw;
+    min-height: 100svh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+@mixin titleH2($c-t){
+    width: 100%;
+    margin: 1em 0 1.3em;
+    letter-spacing: 0.1em;
+    font-family: var.$f-ff;
+    color: $c-t;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+@mixin paragraph($c-p){
+    margin: 0;
+    margin-bottom: 1.3em;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var.$f-fs; 
+    color: $c-p;
+}
+
+@mixin button($gb,$fc,$ta){
+    width: 40%;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    background-color: $gb;
+    color: $fc;
+    text-align: $ta;
+    font-family: var.$f-fs;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+
+@mixin media($width){
+    @media (min-width: $width){
+        @content;
+    }
+}

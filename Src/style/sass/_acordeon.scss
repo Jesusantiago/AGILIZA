@@ -1,0 +1,67 @@
+@use "var";
+@use "mixfun";
+
+.info_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 15%;
+}
+
+.service{
+    color: var.$c-secundary !important;
+}
+
+.acordeon{
+
+    label{
+        display: block;
+        width: 70%;
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: var.$c-secundary;
+        color: var.$c-white;
+        text-align: center;
+        transition: all 0.4s ease;
+        font-family: var.$f-fs;
+
+        &:hover{
+            background-color: var.$c-white;
+            color: var.$c-secundary;
+        }
+    }
+
+    .acordeon-conteiner{
+        padding: 0;
+        margin: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        color: var.$c-gray;
+
+    }
+}
+
+.acordeon_btn:checked ~ .acordeon-conteiner{
+    max-height: 600px;
+    width: 100%;
+    margin-bottom: 5%;
+    
+    p{
+        font-size: .9rem;
+        font-family: var.$f-fs;
+        font-weight: var.$fw4;
+        color: var.$c-gray;
+    }
+
+    margin-bottom: 15%;
+}
+
+.acordeon_btn{
+    display: none;
+}

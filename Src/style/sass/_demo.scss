@@ -1,0 +1,46 @@
+// @use "var";
+// @use "mixfun";
+
+// .demo{
+//     background-color: var.$c-secundary;
+
+//     .info_text_title{
+//         color: var.$c-white;
+//     }
+
+//     .info_text_paragraph{
+//         color: var.$c-white;
+//     }
+
+//     &_btn{
+//         @include mixfun.button(var.$c-secundary, var.$c-white, center);
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: 0 .8rem 0 .4rem;
+//         transition: all 0.6s ease;
+//         // border: 1px solid coral;
+
+//         &:hover {
+//             background-color: var.$c-white;
+//             color: var.$c-secundary;
+//         }
+
+//         &_icon{
+//             transition: all 0.6s ease;
+//         }
+
+//         .text{
+//             transition: all 0.6s ease;   
+//         }
+
+//         &:hover{
+//             .demo_btn_icon, .text{
+//                 transform: translateX(5px);
+//                 color: var.$c-secundary;
+//             }
+//         }
+//     }
+
+
+// }

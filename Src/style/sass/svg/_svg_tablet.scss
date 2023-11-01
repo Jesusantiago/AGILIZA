@@ -1,0 +1,31 @@
+.info_text_title-img{
+    
+svg#freepik_stories-dark-analytics:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg#freepik_stories-dark-analytics.animated #freepik--Device--inject-54 {
+    animation: 4s Infinite linear floating;
+    animation-delay: 0s;
+}
+
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animator-hidden {
+    display: none;
+}
+}
