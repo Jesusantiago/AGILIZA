@@ -43,6 +43,10 @@
         color: var.$c-secundary;
         background-color: var.$c-white;
         margin-bottom: 0;
+
+        @include mixfun.media(500px){
+            font-size: 1rem;
+        }
     }
 
 

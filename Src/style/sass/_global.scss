@@ -1,24 +1,27 @@
 @use "var";
 @use "mixfun";
 
+*{
+  box-sizing: border-box;
+}
+
 html{
-    box-sizing: border-box;
     font-family: var.$f-ff;
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 16px;
-    outline: none;
-    border: none;
+    // overflow-wrap: break-word;
   }
   
-  .feed{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-  }
+.feed{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .feed_section{
-    @include mixfun.feed;
+    @include mixfun.feed_section;
 
     &:first-child{
     background-image: url(../../assets/background.webp);
@@ -26,6 +29,10 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     }
+
+    &:nth-child(2){
+      background-color: var.$c-white;
+      }
     
     &:nth-child(3){
     background-color: var.$c-bg;
@@ -33,23 +40,37 @@ html{
 
     &:nth-child(4){
       background-color: var.$c-white;
-      border: none;
       }
 
     &:nth-child(5){
       background-image: url(../../assets/hombreDatos.webp);
       background-repeat: no-repeat;
       background-size: cover;
-      align-items: center;
       }
 }
 
-.feed_section-small{
-    width: 100%;
-    height: 100svh;
-    background-color: var.$c-white;
-}
+.info{
+  width: 80%;
+  max-width: 900px;
+  height: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
+  @include mixfun.media(1200px){
+    padding: 7rem 0;
+  }
+
+  &_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .swiper {
     width: 100%;
@@ -64,10 +85,3 @@ html{
   justify-content: center;
   align-items: center;
 }
-
-// .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }

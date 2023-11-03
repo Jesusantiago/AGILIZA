@@ -3,91 +3,99 @@
 
 .cover{
     width: 80vw;
-    max-height: 100%;
+    height: 100svh;
+
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
-    row-gap: 35px;
-    padding-bottom: var.$m-s;
-    // margin-bottom: .5rem;
+    align-items: center;
+    flex-wrap: wrap;
 
+    padding: 6em 0 3em;
+    
+    
+    @include mixfun.media(1200px){
+        padding-top: 10rem;
+        flex-direction: row;
+    }
 
     &_text{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        flex-wrap: wrap;
+
+        @include mixfun.media(1200px){
+            max-width: 50%;
+        }
 
         &_title{
-            width: 100%;
             font-family: var.$f-ff;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: var.$c-primary;
             line-height: 2rem;
             text-align: center;
-            font-weight: var.$fw5;
             margin: 0;
             margin-bottom: .5rem;
+
+            @include mixfun.media(500px){
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            @include mixfun.media(1200px){
+                font-size: 2.5rem;
+            }
         }
         
         &_subtitle{
-            width:100%;
             line-height: 1.5rem;
-            height: 30%;
             color: var.$c-white;            
             font-family: var.$f-fs;
             font-size: 1rem;
             text-align: center;
-            font-weight: var.$fw4;
-            margin-bottom: 1.5rem;
 
-        }
-
-        .btn-cover{
-            @include mixfun.button(var.$c-secundary,var.$c-white,"text-aling");
-            transition: all 0.3s linear;
-
-            &:hover{
-                translate: 0 -5px;
-            }
-        }
-
-        .date-cover{
-            background-color: var.$c-secundary;
-            color: var.$c-white;
-
-            &:hover{
-                color: var.$c-secundary;
-                background-color: var.$c-white;
-            }
-        }
-
-        .demo-cover{
-            background-color: var.$c-white;
-            color: var.$c-secundary;
-            
-            &:hover{
-                color: var.$c-white;
-                background-color: var.$c-secundary;
+            @include mixfun.media(500px){
+                font-size: 1.5rem;
+                line-height: 2rem;
             }
 
+            @include mixfun.media(1200px){
+                display: none;
+            }
 
         }
 
     }
 
     &_img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        min-width: 300px;
+        width: 100%;
+        max-width: 7000px;
 
-        img{
-            width: 70%;
-            height: 80%;
+        height: 60%;
+
+        @include mixfun.media(1200px){
+            max-width: 50%;
         }
 
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
     }
+}
 
+.cover_text_subtitle-ind{
+    display: none;
+
+    @include mixfun.media(1200px){
+        @include mixfun.paragraph(var.$c-white);
+        font-size: 1.5rem !important;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
 }

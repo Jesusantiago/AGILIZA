@@ -68,6 +68,22 @@
         }
     }
 
+    @include mixfun.media(1200px){
+        
+        .header_section_menu_list{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            a{
+                color: var.$c-white;
+                text-decoration: none;
+                font-size: 1.7em;
+            }
+        }
+    }
+
     .header_section_menu_item{
         display: none;
 

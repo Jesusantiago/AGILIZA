@@ -1,0 +1,67 @@
+@use "var";
+@use "mixfun";
+
+.product{
+
+    .info{
+        padding-bottom: 0;
+
+        &_text{
+            @include mixfun.media(1200px){
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                div{
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+    
+    .info_text_title{
+        @include mixfun.titleH2(var.$c-primary);
+    }
+
+    .info_text_paragraph{
+        @include mixfun.paragraph(var.$c-white);
+        margin-bottom: 2.5em;        
+        display: block;
+    }
+
+    .info_text_list{
+        padding: 0;
+        margin: 3em 0;
+        width: 85%;
+
+         @include mixfun.media(1200px){
+            width: 100%
+         }
+
+        &-item{
+            @include mixfun.paragraph(var.$c-primary);
+            text-align: left;
+
+            &:nth-child(3){
+                list-style: none;
+                margin-top: 2.5em;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .info_text_title-img{
+        width: 100vw;
+
+        @include mixfun.media(1200px){
+            max-width: 50%;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+
+}
