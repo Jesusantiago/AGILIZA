@@ -5,6 +5,14 @@
     width: 100vw;
     height: 100svh;
 
+    
+    br{
+        margin-bottom: 1rem;
+    }
+
+    @include mixfun.media(1200px){
+        max-width: 90vw;
+    }
 
 }
 
@@ -25,6 +33,46 @@
     p{
         @include mixfun.paragraph(var.$c-gray);
         margin-bottom: 2.5em;
+    }
+
+    &-list{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li{
+            @include mixfun.paragraph(var.$c-gray);
+            list-style: none;
+            text-align: center;
+            margin-bottom: .8rem;   
+        }
+        
+        @include mixfun.media(1200px){
+            max-width: 900px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            li{
+                max-width: 45%;
+                
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                text-align: center;
+                margin-bottom: 2rem;
+
+                .icon-who{
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
     }
 
     @include mixfun.media(1200px){
@@ -58,11 +106,10 @@
                 max-width: 380px;
                 height: 7rem;
                 border-radius: 15px;
-                background-color: var.$c-bg;
                 justify-content: space-evenly;
 
                 span{
-                    color: var.$c-white;
+                    color: var.$c-gray;
                     font-weight: 700;
                 }
             }
@@ -91,16 +138,16 @@
     @include mixfun.media(1200px){
         display: flex;
         flex-direction: row;
-        align-items: start;
+        justify-content: space-between;
+        align-items: center;
         padding-top: 17rem;
-        column-gap: 15px;
+
 
         div{
-            max-width: 30%;
-            // border: 2px solid var.$c-secundary;
+            width: 30%;
+            max-width: 350px;
             border-radius: 15px;
-            padding: 15px;
-            background-color: var.$c-bg;
+            padding: 13px;
             
             h4{
                 color: var.$c-secundary;
@@ -108,7 +155,7 @@
 
             p{
                 margin-bottom: 0;
-                color: var.$c-white;
+                color: var.$c-gray;
             }
         }
     }

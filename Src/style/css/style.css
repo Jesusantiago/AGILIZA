@@ -340,6 +340,8 @@ html {
   object-fit: contain;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .cover_text_subtitle-ind {
@@ -352,6 +354,7 @@ html {
     font-size: 1rem;
     font-family: "aileron", sans-serif;
     color: #f2f2f2;
+    font-weight: 600;
     font-size: 1.5rem !important;
     display: block;
     text-align: center;
@@ -373,6 +376,14 @@ html {
   width: 100vw;
   height: 100svh;
 }
+.about br {
+  margin-bottom: 1rem;
+}
+@media (min-width: 1200px) {
+  .about {
+    max-width: 90vw;
+  }
+}
 
 .about_div {
   background: #f2f2f2;
@@ -391,6 +402,7 @@ html {
   color: #5754c9;
   font-size: 1.3em;
   text-align: center;
+  font-weight: 300;
 }
 @media (min-width: 500px) {
   .about_div h4 {
@@ -408,6 +420,7 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #404040;
+  font-weight: 600;
   margin-bottom: 2.5em;
 }
 @media (min-width: 500px) {
@@ -418,6 +431,57 @@ html {
 @media (min-width: 1200px) {
   .about_div p {
     font-size: 1.5rem;
+  }
+}
+.about_div-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.about_div-list li {
+  margin: 0 0 1.3rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "aileron", sans-serif;
+  color: #404040;
+  font-weight: 600;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+@media (min-width: 500px) {
+  .about_div-list li {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .about_div-list li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .about_div-list {
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about_div-list li {
+    max-width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .about_div-list li .icon-who {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -442,6 +506,7 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #404040;
+  font-weight: 600;
 }
 @media (min-width: 500px) {
   .about_div aside {
@@ -463,11 +528,10 @@ html {
     max-width: 380px;
     height: 7rem;
     border-radius: 15px;
-    background-color: #201c3d;
     justify-content: space-evenly;
   }
   .about_div aside div span {
-    color: #f2f2f2;
+    color: #404040;
     font-weight: 700;
   }
 }
@@ -491,36 +555,27 @@ html {
   .hola {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 17rem;
-    column-gap: 15px;
   }
   .hola div {
-    max-width: 30%;
+    width: 30%;
+    max-width: 350px;
     border-radius: 15px;
-    padding: 15px;
-    background-color: #201c3d;
+    padding: 13px;
   }
   .hola div h4 {
     color: #5754c9;
   }
   .hola div p {
     margin-bottom: 0;
-    color: #f2f2f2;
+    color: #404040;
   }
 }
 
 .product .info {
   padding-bottom: 0;
-}
-@media (min-width: 1200px) {
-  .product .info_text {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .product .info_text div {
-    max-width: 50%;
-  }
 }
 .product .info_text_title {
   margin: 0 0 1.3em;
@@ -529,6 +584,7 @@ html {
   color: #3ed2c6;
   font-size: 1.3em;
   text-align: center;
+  font-weight: 300;
 }
 @media (min-width: 500px) {
   .product .info_text_title {
@@ -546,7 +602,8 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #f2f2f2;
-  margin-bottom: 2.5em;
+  font-weight: 600;
+  font-size: 1.8rem !important;
   display: block;
 }
 @media (min-width: 500px) {
@@ -566,7 +623,13 @@ html {
 }
 @media (min-width: 1200px) {
   .product .info_text_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
     width: 100%;
+    list-style: none;
+    margin-bottom: 0;
   }
 }
 .product .info_text_list-item {
@@ -575,6 +638,7 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #3ed2c6;
+  font-weight: 600;
   text-align: left;
 }
 @media (min-width: 500px) {
@@ -587,24 +651,36 @@ html {
     font-size: 1.5rem;
   }
 }
-.product .info_text_list-item:nth-child(3) {
-  list-style: none;
-  margin-top: 2.5em;
-  font-weight: 700;
+@media (min-width: 1200px) {
+  .product .info_text_list-item {
+    width: 260px;
+    height: 4.5rem;
+    text-align: center;
+    background-color: #5754c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 15px;
+    color: #f2f2f2;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
 }
 .product .info_text_title-img {
   width: 100vw;
+  height: auto;
+  opacity: 0.5;
 }
 @media (min-width: 1200px) {
   .product .info_text_title-img {
-    max-width: 50%;
+    max-width: 100vw;
+    height: auto;
+    object-fit: cover;
   }
 }
-.product .info_text_title-img img {
+.product .info_text_title-img .Product_img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left;
 }
 
 .service .info_text_title {
@@ -614,6 +690,7 @@ html {
   color: #5754c9;
   font-size: 1.3em;
   text-align: center;
+  font-weight: 300;
 }
 @media (min-width: 500px) {
   .service .info_text_title {
@@ -695,6 +772,7 @@ html {
   color: #3ed2c6;
   font-size: 1.3em;
   text-align: center;
+  font-weight: 300;
 }
 @media (min-width: 500px) {
   .contact .info_text_title {
