@@ -13,8 +13,13 @@
 
     .info_text_paragraph{
         @include mixfun.paragraph(var.$c-white);
-        font-size: 1.8rem !important;    
         display: block;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .info_text_list{
@@ -32,9 +37,11 @@
             margin-bottom: 0;
          }
 
+
         &-item{
             @include mixfun.paragraph(var.$c-primary);
-            text-align: left;
+            text-align: center;
+            list-style: none;
 
             @include mixfun.media(1200px){
                 width: 260px;
@@ -65,10 +72,7 @@
         }
         
         .Product_img{
-            width: 100%;
-            // object-position: center;
-            // object-fit: ;
-            
+            width: 100%;  
         }
             
     }

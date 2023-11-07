@@ -10,7 +10,6 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 16px;
-    // overflow-wrap: break-word;
   }
   
 .feed{
@@ -60,7 +59,7 @@ html{
   justify-content: space-between;
 
   @include mixfun.media(1200px){
-    padding: 7rem 0;
+    padding: 7rem 0;     
   }
 
   &_text{

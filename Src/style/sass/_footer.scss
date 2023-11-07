@@ -3,33 +3,123 @@
 
 .footer{
     width: 100vw;
-    min-height: 70svh;
+    min-height: 50svh;
     background-color: var.$c-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     &_text{
-        margin: 40% auto;
+        margin: 50px auto 0;
         width: 80%;
-        height: auto;;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
 
-
-        .footer_item{
-            text-decoration: none;
-            color: var.$c-primary;
-            font-family: var.$f-fs;
-            font-size: 1rem;
-            text-align: center;
+        @include mixfun.media(1200px){
+            flex-direction: row;
         }
 
-    }
+        section{
+            margin-bottom: 2rem;    
+        }
 
-    .login{
-        background-color: var.$c-white;
-        width: 6rem;
-        padding: .5rem 0;
-        border-radius: 15px;
-        color: var.$c-secundary;
-        margin-top: 1rem;
-        text-align: center;
+        &_agiliza{
+
+            @include mixfun.media(1200px){
+                max-width: 350px;
+            }
+
+            img{
+                width: 150px;
+                display: block;
+                margin: 0 auto;
+
+                @include mixfun.media(1200px){
+                    margin: 0;
+                }
+        
+            }
+
+            p{
+                text-align: center;
+                color: var.$c-white;
+
+                @include mixfun.media(1200px){
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        &_contact{
+
+            @include mixfun.media(1200px){
+                width: 30%;
+                min-width: 350px;
+            }
+
+            h3{
+                color: var.$c-primary;
+                font-size: 1.7rem;
+                text-align: center;
+
+                @include mixfun.media(1200px){
+                    margin-top: 0;
+                }
+            }
+            a{
+                text-align: center;
+                color: var.$c-white;
+                margin-top: 0;
+                margin-bottom: 1.5rem;
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                cursor: pointer;
+
+                box-icon{
+                    margin-right: 1rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+
+                @include mixfun.media(1200px){
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+
+                    line-height: 1.5rem;
+                    box-icon{
+                        width: 1.5rem;
+                        height:1.5rem;
+                    }
+                }
+
+            }
+        }
+
+        &_menu{
+
+            @include mixfun.media(1200px){
+                width: 20%;
+                min-width: 250px; 
+            }
+            a{
+                text-decoration: none;
+            }
+
+            h2{
+                text-align: center;
+                font-size: 1.3rem;
+                color: var.$c-primary;
+
+                @include mixfun.media(1200px){
+                 text-align: right;
+                }
+            }
+        }
     }
 
     .footer-CR{
@@ -42,7 +132,7 @@
         padding: 3vw 0;
         color: var.$c-secundary;
         background-color: var.$c-white;
-        margin-bottom: 0;
+        margin: 0;
 
         @include mixfun.media(500px){
             font-size: 1rem;

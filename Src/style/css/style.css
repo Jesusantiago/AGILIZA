@@ -354,7 +354,6 @@ html {
     font-size: 1rem;
     font-family: "aileron", sans-serif;
     color: #f2f2f2;
-    font-weight: 600;
     font-size: 1.5rem !important;
     display: block;
     text-align: center;
@@ -369,6 +368,7 @@ html {
 @media (min-width: 1200px) and (min-width: 1200px) {
   .cover_text_subtitle-ind {
     font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 
@@ -420,7 +420,6 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #404040;
-  font-weight: 600;
   margin-bottom: 2.5em;
 }
 @media (min-width: 500px) {
@@ -431,6 +430,7 @@ html {
 @media (min-width: 1200px) {
   .about_div p {
     font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 .about_div-list {
@@ -444,7 +444,6 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #404040;
-  font-weight: 600;
   list-style: none;
   text-align: center;
   margin-bottom: 0.8rem;
@@ -457,6 +456,7 @@ html {
 @media (min-width: 1200px) {
   .about_div-list li {
     font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 @media (min-width: 1200px) {
@@ -506,7 +506,6 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #404040;
-  font-weight: 600;
 }
 @media (min-width: 500px) {
   .about_div aside {
@@ -516,6 +515,7 @@ html {
 @media (min-width: 1200px) {
   .about_div aside {
     font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 @media (min-width: 1200px) {
@@ -602,8 +602,6 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #f2f2f2;
-  font-weight: 600;
-  font-size: 1.8rem !important;
   display: block;
 }
 @media (min-width: 500px) {
@@ -614,7 +612,13 @@ html {
 @media (min-width: 1200px) {
   .product .info_text_paragraph {
     font-size: 1.5rem;
+    font-weight: 600;
   }
+}
+.product div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product .info_text_list {
   padding: 0;
@@ -638,8 +642,8 @@ html {
   font-size: 1rem;
   font-family: "aileron", sans-serif;
   color: #3ed2c6;
-  font-weight: 600;
-  text-align: left;
+  text-align: center;
+  list-style: none;
 }
 @media (min-width: 500px) {
   .product .info_text_list-item {
@@ -649,6 +653,7 @@ html {
 @media (min-width: 1200px) {
   .product .info_text_list-item {
     font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 @media (min-width: 1200px) {
@@ -702,6 +707,21 @@ html {
     font-size: 2.5rem;
   }
 }
+@media (min-width: 1200px) {
+  .service div {
+    width: 100%;
+    height: 50%;
+    max-height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .service div .acordeon {
+    width: 48%;
+    max-width: 550px;
+  }
+}
 .service .acordeon label {
   display: block;
   width: 70%;
@@ -727,7 +747,9 @@ html {
 }
 @media (min-width: 1200px) {
   .service .acordeon label {
-    width: 750px;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.3rem;
   }
 }
 .service .acordeon .acordeon-conteiner {
@@ -742,7 +764,7 @@ html {
 .service .acordeon_btn:checked ~ .acordeon-conteiner {
   max-height: 600px;
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 15px;
 }
 .service .acordeon_btn:checked ~ .acordeon-conteiner p {
   font-size: 1rem;
@@ -758,7 +780,9 @@ html {
 }
 @media (min-width: 1200px) {
   .service .acordeon_btn:checked ~ .acordeon-conteiner p {
-    max-width: 900px;
+    width: 90%;
+    font-size: 1.3rem;
+    margin: 0 auto;
   }
 }
 .service .acordeon_btn {
@@ -773,6 +797,9 @@ html {
   font-size: 1.3em;
   text-align: center;
   font-weight: 300;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 @media (min-width: 500px) {
   .contact .info_text_title {
@@ -783,6 +810,9 @@ html {
   .contact .info_text_title {
     font-size: 2.5rem;
   }
+}
+.contact .info_text {
+  align-items: end;
 }
 .contact .contact_form {
   width: 100%;
@@ -796,7 +826,10 @@ html {
 }
 @media (min-width: 1200px) {
   .contact .contact_form {
-    max-width: 900px;
+    width: 50%;
+    max-width: 500px;
+    max-height: 550px;
+    align-items: center;
   }
 }
 .contact .contact_form .contact_input {
@@ -844,7 +877,7 @@ html {
   justify-content: space-between;
   overflow: hidden;
   transition: all 0.2s;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
 }
 @media (min-width: 500px) {
   .contact .contact_form_btn {
@@ -881,29 +914,114 @@ html {
 
 .footer {
   width: 100vw;
-  min-height: 70svh;
+  min-height: 50svh;
   background-color: #201c3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer_text {
-  margin: 40% auto;
+  margin: 50px auto 0;
   width: 80%;
   height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
 }
-.footer_text .footer_item {
-  text-decoration: none;
+@media (min-width: 1200px) {
+  .footer_text {
+    flex-direction: row;
+  }
+}
+.footer_text section {
+  margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  .footer_text_agiliza {
+    max-width: 350px;
+  }
+}
+.footer_text_agiliza img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .footer_text_agiliza img {
+    margin: 0;
+  }
+}
+.footer_text_agiliza p {
+  text-align: center;
+  color: #f2f2f2;
+}
+@media (min-width: 1200px) {
+  .footer_text_agiliza p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer_text_contact {
+    width: 30%;
+    min-width: 350px;
+  }
+}
+.footer_text_contact h3 {
   color: #3ed2c6;
-  font-family: "aileron", sans-serif;
-  font-size: 1rem;
+  font-size: 1.7rem;
   text-align: center;
 }
-.footer .login {
-  background-color: #f2f2f2;
-  width: 6rem;
-  padding: 0.5rem 0;
-  border-radius: 15px;
-  color: #5754c9;
-  margin-top: 1rem;
+@media (min-width: 1200px) {
+  .footer_text_contact h3 {
+    margin-top: 0;
+  }
+}
+.footer_text_contact a {
   text-align: center;
+  color: #f2f2f2;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer_text_contact a box-icon {
+  margin-right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+@media (min-width: 1200px) {
+  .footer_text_contact a {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .footer_text_contact a box-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer_text_menu {
+    width: 20%;
+    min-width: 250px;
+  }
+}
+.footer_text_menu a {
+  text-decoration: none;
+}
+.footer_text_menu h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #3ed2c6;
+}
+@media (min-width: 1200px) {
+  .footer_text_menu h2 {
+    text-align: right;
+  }
 }
 .footer .footer-CR {
   display: block;
@@ -915,7 +1033,7 @@ html {
   padding: 3vw 0;
   color: #5754c9;
   background-color: #f2f2f2;
-  margin-bottom: 0;
+  margin: 0;
 }
 @media (min-width: 500px) {
   .footer .footer-CR {
