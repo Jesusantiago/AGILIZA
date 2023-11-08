@@ -940,6 +940,7 @@ html {
 @media (min-width: 1200px) {
   .footer_text_agiliza {
     max-width: 350px;
+    margin-right: 200px;
   }
 }
 .footer_text_agiliza img {
@@ -965,7 +966,7 @@ html {
 @media (min-width: 1200px) {
   .footer_text_contact {
     width: 30%;
-    min-width: 350px;
+    max-width: 280px;
   }
 }
 .footer_text_contact h3 {
@@ -976,6 +977,7 @@ html {
 @media (min-width: 1200px) {
   .footer_text_contact h3 {
     margin-top: 0;
+    text-align: left;
   }
 }
 .footer_text_contact a {
@@ -997,7 +999,7 @@ html {
   .footer_text_contact a {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    line-height: 1.5rem;
+    text-align: left;
   }
   .footer_text_contact a box-icon {
     width: 1.5rem;
@@ -1007,7 +1009,7 @@ html {
 @media (min-width: 1200px) {
   .footer_text_menu {
     width: 20%;
-    min-width: 250px;
+    max-width: 100px;
   }
 }
 .footer_text_menu a {
@@ -1021,6 +1023,7 @@ html {
 @media (min-width: 1200px) {
   .footer_text_menu h2 {
     text-align: right;
+    margin-top: 0;
   }
 }
 .footer .footer-CR {

@@ -30,6 +30,7 @@
 
             @include mixfun.media(1200px){
                 max-width: 350px;
+                margin-right: 200px;
             }
 
             img{
@@ -58,7 +59,7 @@
 
             @include mixfun.media(1200px){
                 width: 30%;
-                min-width: 350px;
+                max-width: 280px;
             }
 
             h3{
@@ -68,6 +69,7 @@
 
                 @include mixfun.media(1200px){
                     margin-top: 0;
+                    text-align: left;
                 }
             }
             a{
@@ -84,13 +86,14 @@
                     margin-right: 1rem;
                     width: 1.2rem;
                     height: 1.2rem;
+
                 }
 
                 @include mixfun.media(1200px){
                     font-size: 1.2rem;
                     line-height: 1.5rem;
+                    text-align: left;
 
-                    line-height: 1.5rem;
                     box-icon{
                         width: 1.5rem;
                         height:1.5rem;
@@ -104,7 +107,7 @@
 
             @include mixfun.media(1200px){
                 width: 20%;
-                min-width: 250px; 
+                max-width: 100px; 
             }
             a{
                 text-decoration: none;
@@ -117,6 +120,7 @@
 
                 @include mixfun.media(1200px){
                  text-align: right;
+                 margin-top: 0;
                 }
             }
         }
