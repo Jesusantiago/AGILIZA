@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -633,7 +634,7 @@ html {
     justify-content: space-between;
     width: 100%;
     list-style: none;
-    margin-bottom: 0;
+    margin-bottom: 4rem;
   }
 }
 .product .info_text_list-item {
@@ -670,6 +671,96 @@ html {
     color: #f2f2f2;
     font-size: 1.3rem;
     margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .product .info_text_list-item:hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:first-child:hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:first-child::after {
+    content: "Producto en la nube";
+    background-color: #f2f2f2;
+    color: #5754c9;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  .product .info_text_list-item:nth-child(2):hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:nth-child(2)::after {
+    content: "Acceso e integración multiplataforma";
+    background-color: #f2f2f2;
+    color: #5754c9;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  .product .info_text_list-item:nth-child(3):hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:nth-child(3)::after {
+    content: "Cuadros de mando personalizados";
+    background-color: #f2f2f2;
+    color: #5754c9;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  .product .info_text_list-item:nth-child(4):hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:nth-child(4)::after {
+    content: "Informes actualizados en tiempo real";
+    background-color: #f2f2f2;
+    color: #5754c9;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  .product .info_text_list-item:nth-child(5):hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:nth-child(5)::after {
+    content: "Utilización de marcos de trabajos agiles";
+    background-color: #f2f2f2;
+    color: #5754c9;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  .product .info_text_list-item:nth-child(6):hover::after {
+    transform: translateY(0);
+  }
+  .product .info_text_list-item:nth-child(6)::after {
+    content: "Seguridad avanzada";
+    background-color: #f2f2f2;
+    color: #5754c9;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
   }
 }
 .product .info_text_title-img {
@@ -680,12 +771,20 @@ html {
 @media (min-width: 1200px) {
   .product .info_text_title-img {
     max-width: 100vw;
-    height: auto;
+    height: 700px;
     object-fit: cover;
+  }
+  .product .info_text_title-img .simpleParallax {
+    height: 100%;
   }
 }
 .product .info_text_title-img .Product_img {
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .product .info_text_title-img .Product_img {
+    height: 100%;
+  }
 }
 
 .service .info_text_title {
