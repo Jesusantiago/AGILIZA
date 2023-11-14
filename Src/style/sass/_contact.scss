@@ -2,102 +2,113 @@
 @use "mixfun";
 
 .contact{
-    
-    .info_text_title{
-        @include mixfun.titleH2(var.$c-primary);
-        margin-bottom: 0;
+
+    &-text{
         width: 100%;
-        text-align: center;
-    }
+        align-self: center;
 
-    .info_text{
-        align-items: end;
-    }
 
-    .contact_form{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 1rem;
-        font-family: var.$f-fs;
-        margin: 1.5em 0;
-
-        @include mixfun.media(1200px){
-            width: 50%;
-            max-width: 500px;
-            max-height: 550px;
-            align-items: center;
+        .info_text_title{
+            @include mixfun.titleH2(var.$c-primary);
+            margin-bottom: 0;
+            width: 100%;
+            text-align: center;
         }
 
-        .contact_input{
-            width: 90%;
-            color: var.$c-gray;
-            border: none;
-            border-radius: 15px;
-            line-height: 2rem;
-            padding-left: .8rem;
-            padding-bottom: .125rem;
-
-            @include mixfun.media(500px){
-                font-size: 1.5rem;
-                line-height: 2.3rem;
-                margin-top: 1rem;
-            };
-
-
-            &:focus{
-                border: none;
-                outline: none;
+        .contact_form{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+            font-family: var.$f-fs;
+            margin: 1.5em 0;
+    
+            @include mixfun.media(1200px){
+                width: 100%;
+                align-items: center;
             }
-
-            &:nth-child(6){
-                height: 5em;
-                line-height: 1.2em;
-                padding-top: .5em;
-                resize: none;
+    
+            .contact_input{
+                width: 90%;
+                max-width: 350px;
+                color: var.$c-gray;
+                border: none;
+                border-radius: 15px;
+                line-height: 2rem;
+                padding-left: .8rem;
+                padding-bottom: .125rem;
+    
+                @include mixfun.media(500px){
+                    font-size: 1rem;
+                    line-height: 2rem;
+                };
+    
+                &:focus{
+                    border: none;
+                    outline: none;
+                }
+    
+                &:nth-child(6){
+                    height: 5em;
+                    line-height: 1.2em;
+                    padding-top: .5em;
+                    resize: none;
+                }
+            }
+            
+    
+            &_btn{
+                @include mixfun.button(var.$c-secundary,var.$c-white, center);
+                padding: 0 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                overflow: hidden;
+                transition: all 0.2s;
+                margin-top: .5em;
+    
+                span {
+                    display: block;
+                    margin-left: 0.3em;
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                svg {
+                    display: block;
+                    transform-origin: center center;
+                    transition: transform 0.3s ease-in-out;
+                }
+                
+                &:hover .svg-wrapper {
+                    animation: fly-1 0.6s ease-in-out infinite alternate;
+                }
+                
+                &:hover svg {
+                    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+                }
+                
+                &:hover span {
+                    transform: translateX(5em);
+                }
+                
+                &:active {
+                    transform: scale(0.95);
+                }
             }
         }
         
 
-        &_btn{
-            @include mixfun.button(var.$c-secundary,var.$c-white, center);
-            padding: 0 1.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            overflow: hidden;
-            transition: all 0.2s;
-            margin-top: .5em;
+    }
+    
+    &_img{
+        width: 60vw;
+        height: 100svh;
 
-            span {
-                display: block;
-                margin-left: 0.3em;
-                transition: all 0.3s ease-in-out;
-            }
-
-            svg {
-                display: block;
-                transform-origin: center center;
-                transition: transform 0.3s ease-in-out;
-            }
-            
-            &:hover .svg-wrapper {
-                animation: fly-1 0.6s ease-in-out infinite alternate;
-            }
-            
-            &:hover svg {
-                transform: translateX(1.2em) rotate(45deg) scale(1.1);
-            }
-            
-            &:hover span {
-                transform: translateX(5em);
-            }
-            
-            &:active {
-                transform: scale(0.95);
-            }
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
 }

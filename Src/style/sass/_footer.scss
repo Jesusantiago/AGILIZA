@@ -3,7 +3,7 @@
 
 .footer{
     width: 100vw;
-    min-height: 50svh;
+    min-height: 25svh;
     background-color: var.$c-bg;
     display: flex;
     flex-direction: column;
@@ -129,11 +129,11 @@
     .footer-CR{
         display: block;
         width: 100%;
-        line-height: 1.5rem;
+        line-height: 1rem;
         font-family: var.$f-fs;
         font-size: 0.8rem;
         text-align: center;
-        padding: 3vw 0;
+        padding: 1rem 0;
         color: var.$c-secundary;
         background-color: var.$c-white;
         margin: 0;

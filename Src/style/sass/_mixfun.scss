@@ -14,7 +14,7 @@
     letter-spacing: 0.1em;
     font-family: var.$f-ff;
     color: $c-t;
-    font-size: 1.3em;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 300;
 
@@ -30,7 +30,7 @@
 @mixin paragraph($c-p){
     margin: 0 0 1.3rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: .9rem;
     font-family: var.$f-fs; 
     color: $c-p;
     
@@ -39,8 +39,7 @@
     }
     
     @include media(1200px){
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.2rem;
     }    
 }
 
@@ -71,4 +70,11 @@
     @media (min-width: $width){
         @content;
     }
+}
+
+@mixin icon($min-w, $w, $max-w, $h){
+    min-width: $min-w;
+    width: $w;
+    max-width: $max-w;
+    height: $h;
 }

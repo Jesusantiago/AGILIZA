@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"/>
+    <meta name="description" content="¡Descubre cómo nuestra empresa de Business Intelligence revoluciona tu toma de decisiones! En este standup, te presentaremos las últimas tendencias en análisis de datos y cómo puedes aprovecharlas para el éxito de tu negocio. Acompáñanos para conocer más sobre nuestras soluciones innovadoras y cómo pueden impulsar tu empresa hacia el futuro." />
+    <meta name="keywords" content="Business Intelligence, análisis de datos, inteligencia empresarial, toma de decisiones, herramientas de BI, informes empresariales" />
+
     <link rel="stylesheet" href="./Src/style/css/normalize.css">
     <link rel="stylesheet" href="./Src/style/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./Src/assets/isologo.svg" type="image/x-icon">
 
-    <!-- <script src="./Src/js/form.js"></script> -->
 
     <title>AGILIZA - HOME</title>
 </head>
@@ -55,8 +58,8 @@
     <section class="feed_section">
         <article class="cover" data-aos="fade-up">
             <article class="cover_text" data-aos="fade-up">
-                <h1 class="cover_text_title">Transforma Tu Negocio, Impulsa tu Éxito</h1>
-                <h3 class="cover_text_subtitle">Automatiza y mejora tus operaciones con AGILIZA Proyectos Adaptivos S.A</h3>
+                <h1 class="cover_text_title">Impulsa tu éxito <br>Transforma tu negocio</h1>
+                <h2 class="cover_text_subtitle">Automatiza y mejora tus operaciones con AGILIZA Proyectos Adaptivos S.A</h2>
                 <!-- <input type="button" class="btn-cover date-cover" value="Contacto"></input>
                 <input type="button" class="btn-cover demo-cover" value="Demo"></input> -->
             </article>
@@ -71,49 +74,53 @@
 
     <section class="feed_section" id="about">
 
-        <swiper-container class="mySwiper about" navigation="true" loop="true" data-aos="fade-top">
+        <swiper-container class="mySwiper about" id="about-swiper" navigation="true" loop="true" data-aos="fade-top">
 
-            <swiper-slide class="about_div">
+            <swiper-slide class="about_div mision">
 
-                <h4 class="solucions_div-text">QUIENES SOMOS</h4>
-                <p class="about_div-paragraph">Nuestra empresa se especializa en ofrecer soluciones integrales que revolucionan la gestión de proyectos, sectores y operaciones empresariales. <br>
-                Nos enfocamos en la colaboración efectiva y la sinergia en los equipos de trabajo, incorporando herramientas y software que garantizan un acceso rápido y eficiente a la información. 
-                    <!-- Imagine acceder de forma segura y en tiempo real a los datos empresariales desde cualquier dispositivo con un solo clic. -->
+                    <h4 class="solucions_div-text">QUIENES SOMOS</h4>
+                    <p class="about_div-paragraph">Nuestra empresa se especializa en ofrecer soluciones integrales que revolucionan la gestión de proyectos, sectores y operaciones empresariales. <br> <br>
+                    Nos enfocamos en la colaboración efectiva y la sinergia en los equipos de trabajo, incorporando herramientas y software que garantizan un acceso rápido y eficiente a la información. 
+                        <!-- Imagine acceder de forma segura y en tiempo real a los datos empresariales desde cualquier dispositivo con un solo clic. -->
 
-                </p>
+                    </p>
 
-                <aside>
-                    <div>
-                        <box-icon name='cog' color='#5754c9' class="icon"></box-icon>
-                        <span>Transformación</span>
-                    </div>
-                    <div>
-                        <box-icon name='search-alt' color='#5754c9' class="icon"></box-icon>
-                        <span>Optimizar</span>
-                    </div>
-                    <div>
-                        <box-icon name='link' color='#5754c9' class="icon"></box-icon>
-                        <span>Integración</span>
-                    </div>
-                </aside>
+                    <aside>
+                        <div>
+                            <img src="./Src/assets/tool.svg" alt="" class="icon">
+                            <span>Transformación</span>
+                        </div>
+                        <div>
+                            <img src="./Src/assets/search.svg" alt="" class="icon">
+                            <span>Optimizar</span>
+                        </div>
+                        <div>
+                            <img src="Src/assets/link15.svg" alt="" class="icon">
+                            <span>Integración</span>
+                        </div>
+                    </aside>
+
             </swiper-slide>
 
-            <swiper-slide class="about_div hola">
+            <swiper-slide class="about_div vision">
                 <div>
-                    <h4 class="solucions_div-text">MISIÓN</h4>
-                    <p class="about_div-paragraph">Contribuir al éxito de nuestros clientes, acompañándolos en todo
+                    
+                        <img src="Src/assets/mision.svg" alt="" class="icon">
+                        <h4 class="solucions_div-text">MISIÓN</h4>
+                        <p class="about_div-paragraph">Contribuir al éxito de nuestros clientes, acompañándolos en todo
                         el camino de la transformación digital y generando soluciones innovadoras.</p>
-
+                    
                 </div>
 
                 <div>
+                    <img src="Src/assets/vision.svg" alt="" class="icon">
                     <h4 class="solucions_div-text">VISIÓN</h4>
                     <p class="about_div-paragraph">Generar innovación con aplicaciones tecnológicas exitosas para
                         cumplir las expectativas de los interesados buscando la máxima eficiencia del negocio.</p>
                 </div>
-
                
                 <div>
+                    <img src="Src/assets/valores.svg" alt="" class="icon">
                     <h4 class="solucions_div-text">VALORES</h4>
                     <p class="about_div-paragraph">Trabajamos en equipo con base en la confianza, el compromiso y la
                         responsabilidad, generando soluciones en un marco de respeto ética profesional.</p>
@@ -121,23 +128,24 @@
                
             </swiper-slide>
 
-            <swiper-slide class="about_div">
+            <swiper-slide class="about_div valores">
                 <h4 class="solucions_div-text">NUESTROS OBJETIVOS</h4>
                 <ul class="about_div-list"> 
                     <li> 
-                        <box-icon name='key' color='#5754c9' class="icon-who"></box-icon>
-                        Facilitar el acceso a la inteligencia empresarial a todos y en cualquier parte.</li>
+                        <img src="./Src/assets/key.svg" alt="" class="icon">
+                        Facilitar el acceso a la inteligencia empresarial a todos y en cualquier parte.
+                    </li>
                     <li>
-                        <box-icon name='stopwatch' color='#5754c9' class="icon-who"></box-icon>
+                        <img src="./Src/assets/clock.svg" alt="" class="icon">
                         Lograr mayor capacidad de convertir la información en acciones y encontrar respuestas rápidas.
                     </li>
                     <li>
-                        <box-icon name='align-middle' color='#5754c9'class="icon-who"></box-icon>
-                        Mejorar la eficacia y flexibilidad para permitir, optimizar, limpiar, transformar y combinar datos de múltiples orígenes para luego extraer información importante para la toma de decisiones en una amplia gama de escenarios.
+                        <img src="./Src/assets/list.svg" alt="" class="icon">
+                        Optimiza tus datos para tomar decisiones clave a partir de múltiples fuentes y aumenta tu eficacia y flexibilidad.
                     </li>             
                     <li>
-                        <box-icon name='glasses' color='#5754c9' class="icon-who"></box-icon>
-                        Visualizar información en tiempo real, mediante informes sorprendentes, innovadores y personalizados, con datos interactivos desde cualquier dispositivo.
+                        <img src="./Src/assets/glasses.svg" alt="" class="icon">
+                        Obtén informes personalizados en tiempo real desde cualquier dispositivo.
                     </li>
                     
                 </ul>
@@ -154,30 +162,51 @@
 
                 <h2 class="info_text_title" data-aos="fade-top">NUESTRO PRODUCTO</h2>
                 <p class="info_text_paragraph" data-aos="fade-top">
-                    Somos expertos en bases de datos y tableros, y estamos comprometidos en optimizar tus flujos de trabajo. Descubre cómo podemos ayudarte:
+                    Como expertos en bases de datos y tableros dinámicos,  estamos comprometidos en optimizar tus flujos de trabajo. Descubre cómo podemos ayudarte con nuestro producto adaptado a tus necesidades.
                 </p>
 
-                <div>                    
-    
-                    <ul class="info_text_list">
+                <div class="product_container">
+                    <ul class="product_container_list">
 
+                        <div class="product_container_list_item">
+                            <img src="Src/assets/ICONO-04.svg" alt="Imagen de Nube" class="icon">
+                            <li class="product_container_list_item-text nube" data-aos="fade-top">Nube</li>
+                        </div>    
 
-                        <li class="info_text_list-item" data-aos="fade-top">Nube</li>
-                        <li class="info_text_list-item" data-aos="fade-top">Multiplataforma</li>
-                        <li class="info_text_list-item" data-aos="fade-top">Personalización</li>
-                        <li class="info_text_list-item" data-aos="fade-top">Actualización</li>
-                        <li class="info_text_list-item" data-aos="fade-top">Trabajos agiles</li>
-                        <li class="info_text_list-item" data-aos="fade-top">Seguridad </li>
+                        <div class="product_container_list_item">
+                            <img src="Src/assets/ICONO-05.svg" alt="Imagen de Multiplataforma" class="icon">
+                            <li class="product_container_list_item-text multiplataforma" data-aos="fade-top">Multiplataforma</li>
+                        </div>
+
+                        <div class="product_container_list_item">
+                            <img src="Src/assets/ICONO-06.svg" alt="Imagen de Personalización"  class="icon">
+                            <li class="product_container_list_item-text personalizacion" data-aos="fade-top">Personalización</li>
+                        </div>
+
+                        <div class="product_container_list_item">
+                            <img src="Src/assets/ICONO-07.svg" alt="Imagen de Actualización" class="icon">
+                            <li class="product_container_list_item-text actualización" data-aos="fade-top">Actualización</li>
+                        </div>
+
+                        <div class="product_container_list_item">
+                            <img src="Src/assets/ICONO-08.svg" alt="Imagen de trabajo agiles" class="icon">
+                            <li class="product_container_list_item-text agiles" data-aos="fade-top">Trabajos agiles</li>
+                        </div>
+
+                        <div class="product_container_list_item">
+
+                            <img src="Src/assets/ICONO-09.svg" alt="Imagen de Seguridad" class="icon">
+                            <li class="product_container_list_item-text seguridad" data-aos="fade-top">Seguridad </li>
+                        </div>
                         
                     </ul>
                 </div>
-            
-                <article class="info_text_title-img">
 
-                    <img src="Src/assets/productImage.jpg" alt="" srcset="" class="Product_img">
-
-                </article>
+            <article class="info_text_title-img">
+                <img src="Src/assets/productImage-prueba.jpg" alt="" srcset="" class="Product_img">
+                <!-- <img src="Src/assets/Frame 1 (2).png" alt="" srcset="" class="Product_img"> -->
             </article>
+        </article>
     
         </article>
     </section>
@@ -190,78 +219,56 @@
                 <div>
                     <article class="acordeon" data-aos="fade-right">
                         <input type="radio" name="acordeon" id="acordeon_btn1" class="acordeon_btn">
-                        <label for="acordeon_btn1">Enfocados en la Efectividad de Datos</label>
+                        <img src="./Src/assets/ser1.svg" alt="" class="icon">
+
+                        <label for="acordeon_btn1">Enfocados en la efectividad de datos</label>
                         <div class="acordeon-conteiner">
-                            <p>Recolectamos y procesamos datos con precisión, convirtiéndolos en información valiosa para tu empresa. </p>
-    
-                            <p>Analizamos tendencias y patrones para impulsar Decisiones Estratégicas.</p>
-    
-                            <p>Aplicamos técnicas avanzadas de análisis de datos para descubrir tendencias, patrones y conocimientos que respaldarán tus decisiones empresariales con información precisa.</p>
+                            <p>Convertimos datos en información valiosa y precisa que respalda tus decisiones empresariales. Usando técnicas avanzadas de análisis de datos, descubrimos tendencias, patrones e insights que te llevarán a mejores resultados.</p>
                         </div>
                     </article>
     
                     <article class="acordeon" data-aos="fade-left">
                         <input type="radio" name="acordeon" id="acordeon_btn2" class="acordeon_btn">
-                        <label for="acordeon_btn2">Gestión Integral de Datos</label>
+                        <img src="./Src/assets/servi2.svg" alt="" class="icon">
+                        <label for="acordeon_btn2">Gestión integral de datos</label>
                         <div class="acordeon-conteiner">
-                            <p>Ofrecemos servicios de gestión y organización de datos provenientes de diversas fuentes.
-                            </p>
-    
-                            <p> Estructura y Acceso Simplificados. </p>
-    
-                            <p> Nos aseguramos de que toda la información esté estructurada adecuadamente y sea
-                                fácilmente accesible para optimizar tus operaciones empresariales.</p>
+                            <p>Gestionamos datos de diversas fuentes para tu empresa. Nuestro enfoque se basa en garantizar que la información esté estructurada correctamente y sea fácilmente accesible. Optimiza tus operaciones empresariales con nuestra solución simplificada.</p>
                         </div>
                     </article>
     
                     <article class="acordeon" data-aos="fade-right">
                         <input type="radio" name="acordeon" id="acordeon_btn3" class="acordeon_btn">
-                        <label for="acordeon_btn3">Adaptación Tecnológica Personalizada</label>
+                        <img src="./Src/assets/servi3.svg" alt="" class="icon">
+                        <label for="acordeon_btn3">Adaptación tecnológica personalizada</label>
                         <div class="acordeon-conteiner">
-                            <p>Desarrollamos soluciones tecnológicas adaptadas a las necesidades específicas de tu
-                                empresa.</p>
-    
-                            <p>Optimiza Procesos con Herramientas de Decisión.
-                            </p>
-    
-                            <p>Creamos las herramientas necesarias para mejorar tus procesos y aumentar la eficiencia,
-                                facilitando la toma de decisiones.</p>
+                            <p>Creamos soluciones tecnológicas personalizadas para satisfacer las necesidades específicas de tu empresa. Nuestras herramientas de decisión te ayudarán a optimizar tus procesos.</p>
                         </div>
                     </article>
     
                     <article class="acordeon" data-aos="fade-left">
                         <input type="radio" name="acordeon" id="acordeon_btn4" class="acordeon_btn">
-                        <label for="acordeon_btn4">Información Clara y Accesible</label>
+                        <img src="./Src/assets/servi4.svg" alt="" class="icon">
+                        <label for="acordeon_btn4">Información clara y accesible</label>
                         <div class="acordeon-conteiner">
-                            <p>Diseñamos tableros de control personalizados que te brindan una visualización clara y
-                                concisa de las estadísticas y datos relevantes para tu negocio. </p>
-    
-                            <p>Acceso en Todo Momento y Lugar.</p>
-    
-                            <p>Estos tableros ofrecen una visión completa de tu empresa, estés en la oficina o en
-                                cualquier otro lugar, para que siempre estés informado y tomes las  decisiones adecuadas.</p>
+                            <p>Diseñamos tableros de control personalizados que te proporcionan una visualización clara y concisa de las estadísticas y datos más relevantes para tu negocio. Con acceso en todo momento y lugar, podrás tomar decisiones informadas en cualquier momento y desde cualquier ubicación.</p>
                         </div>
                     </article>
     
                     <article class="acordeon" data-aos="fade-right">
                         <input type="radio" name="acordeon" id="acordeon_btn5" class="acordeon_btn">
+                        <img src="./Src/assets/servi5.svg" alt="" class="icon">
                         <label for="acordeon_btn5">Geolocalización</label>
                         <div class="acordeon-conteiner">
-                            <p>Empleamos técnicas avanzadas de análisis para procesar y examinar datos geográficos,
-                                desvelando patrones y tendencias para respaldar tus decisiones estratégicas.</p>
-    
-                            <p>Nuestra capacidad abarca la interpretación de mapas, correlación con datos georeferenciados y la generación de hitos geográficos claves que impulsarán tu negocio.</p>
+                            <p>Procesamos y examinamos datos geográficos con técnicas avanzadas de análisis. Ofrecemos interpretación de mapas, correlación de datos georeferenciados y generación de hitos geográficos clave para impulsar tu negocio. Toma decisiones estratégicas informadas basadas en patrones y tendencias geográficas.</p>
                         </div>
                     </article>
     
                     <article class="acordeon" data-aos="fade-left">
                         <input type="radio" name="acordeon" id="acordeon_btn6" class="acordeon_btn">
-                        <label for="acordeon_btn6">Atención Inmediata a tus Necesidades</label>
+                        <img src="./Src/assets/servi6.svg" alt="" class="icon">
+                        <label for="acordeon_btn6">Atención inmediata a tus necesidades</label>
                         <div class="acordeon-conteiner">
-                            <p>Nuestro servicio de soporte sólido y oportuno se asegura de atender todas tus necesidades de manera inmediata y garantizando la operatividad continua. </p>
-    
-                            <p>Estamos preparados para resolver cualquier problema técnico y garantizar el funcionamiento continuo de las soluciones que hemos implementado para tu empresa.  <br> <br>
-                                Tu tranquilidad es nuestra prioridad.</p>
+                            <p>Nuestro servicio de soporte garantiza atender tus necesidades de manera inmediata, asegurando una operatividad continua. Resolvemos cualquier problema técnico y garantizamos el funcionamiento de las soluciones implementadas en tu empresa.</p>
                         </div>
                     </article>
                 </div>
@@ -273,35 +280,36 @@
     <section class="feed_section contact" id="Contact">
         <article class="info ">
 
-            <article class="info_text" >
+            <article class="info_text">
 
-                <h4 class="info_text_title" data-aos="fade-top">CONTACTO</h4>
+                <article class="contact-text">
+                    <h4 class="info_text_title" data-aos="fade-top">CONTACTO</h4>
 
-                <form class="contact_form" id="formContact" data-aos="fade-top" action="https://formspree.io/f/xdorjylo" method="POST">
+                    <form class="contact_form" id="formContact" data-aos="fade-top" action="https://formspree.io/f/xdorjylo" method="POST">
 
-                    <input type="text" name="name" class="contact_input" placeholder="Nombre y Apellido">
-                    <input type="text" name="company" class="contact_input" placeholder="Compañia">
-                    <input type="text" name="charge" class="contact_input" placeholder="Cargo">
-                    <input type="text" name="country" class="contact_input" placeholder="País">
-                    <input type="tel" name="phone" class="contact_input" placeholder="Telefono laboral">
-                    <textarea name="" cols="10" rows="10" placeholder="Escriba su mensaje" class="contact_input"></textarea>
+                        <input type="text" name="name" class="contact_input" placeholder="Nombre y Apellido">
+                        <input type="text" name="company" class="contact_input" placeholder="Compañia">
+                        <input type="text" name="charge" class="contact_input" placeholder="Cargo">
+                        <input type="text" name="country" class="contact_input" placeholder="País">
+                        <input type="tel" name="phone" class="contact_input" placeholder="Telefono laboral">
+                        <textarea name="" cols="10" rows="10" placeholder="Escriba su mensaje" class="contact_input"></textarea>
 
-                    <button type="submit" class="contact_form_btn">
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                                        fill="currentColor"></path>
-                                </svg>
+                        <button type="submit" class="contact_form_btn">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <span>Enviar</span>
-                    </button>
+                            <span>Enviar</span>
+                        </button>
 
-                </form>
-
+                    </form>
+                </article>             
             </article>
 
         </article>
@@ -315,7 +323,7 @@
         <section class="footer_text_agiliza">
 
             <img src="./Src/assets/Logotipo_verde.png" alt="">
-            <p>En AGILIZA queremos que se sienta cómodo al interactuar con nuestra plataforma, trabajaremos para que se adapte a tu necesidad.</p>
+            <p>Trabajaremos a su servicio porque nuestra prioridad es tu tranquilidad.</p>
         </section>
 
         <section class="footer_text_contact">
@@ -340,7 +348,7 @@
                 <h2 class="footer_item-title">Servicio</h2>
             </a>
     
-            <a href="#video" class="footer_item">
+            <a href="#Contact" class="footer_item">
                 <h2 class="footer_item-title">Contacto</h2>
             </a>
         </section>
@@ -350,9 +358,7 @@
 </footer> 
 
 <div>
-    <script src="./Src/js/burger.js"></script>
-    <!-- <script src="./Src/js/form.js"></script> -->
-    <!-- <script src="./Src/js/parallax.js"></script> -->
+    <script src="./Src/js/burger.js"></script>    
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js" type="module"></script>
 
