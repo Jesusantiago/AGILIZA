@@ -137,10 +137,6 @@
         color: var.$c-secundary;
         background-color: var.$c-white;
         margin: 0;
-
-        @include mixfun.media(500px){
-            font-size: 1rem;
-        }
     }
 
 
