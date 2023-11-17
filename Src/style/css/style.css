@@ -34,16 +34,18 @@ html {
   background-color: #f2f2f2;
   min-height: 300px;
 }
-.feed_section:nth-child(3) {
+.feed_section:nth-child(4) {
   background-color: #201c3d;
 }
-.feed_section:nth-child(4) {
+.feed_section:nth-child(5) {
   background-color: #f2f2f2;
 }
-.feed_section:nth-child(5) {
+.feed_section:nth-child(6) {
   background-image: url(../../assets/hombreDatos.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+  min-height: 500px;
 }
 
 .info {
@@ -81,6 +83,23 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.aside {
+  width: 100vw;
+  height: auto;
+  opacity: 0.6;
+}
+.aside .Product_img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@media (min-width: 1200px) {
+  .aside .Product_img {
+    height: 700px;
+    object-fit: cover;
+  }
 }
 
 .icon {
@@ -291,7 +310,7 @@ html {
   flex-direction: column-reverse;
   align-items: center;
   flex-wrap: wrap;
-  padding: 6em 0 3em;
+  padding: 6em 0 0em;
 }
 @media (min-width: 1200px) {
   .cover {
@@ -324,6 +343,7 @@ html {
   .cover_text_title {
     font-size: 2.8rem;
     text-align: center;
+    line-height: 4rem;
   }
 }
 .cover_text_subtitle {
@@ -759,8 +779,14 @@ html {
 }
 .product .info_text_title-img .Product_img {
   width: 100%;
-  height: 700px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+}
+@media (min-width: 1200px) {
+  .product .info_text_title-img .Product_img {
+    height: 700px;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -770,16 +796,17 @@ html {
     max-height: 1100px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
   }
   .service div .acordeon {
     width: 30%;
     max-width: 550px;
-    height: 30r em;
-    margin-bottom: 2rem;
+    height: 18.5rem;
+    margin-bottom: 0;
     padding: 1rem 2rem;
     border-radius: 15px;
+    align-items: start;
   }
   .service div .acordeon:hover {
     box-shadow: 2px 4px 9px 0 rgba(0, 0, 0, 0.13);
@@ -792,7 +819,7 @@ html {
   }
   .service div .acordeon label {
     width: 100%;
-    height: 4.5rem;
+    height: 3rem;
     font-size: 1.2rem;
     text-align: left;
     color: #5754c9;
@@ -804,7 +831,7 @@ html {
     width: 100%;
   }
   .service div .acordeon-conteiner p {
-    text-align: left;
+    text-align: center;
     line-height: 1.3rem;
     margin: 0 0 1rem;
   }
@@ -843,6 +870,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
   margin-bottom: 1.5rem;
 }
 .service .acordeon .icon {
@@ -888,7 +916,7 @@ html {
 }
 .service .acordeon_btn:checked ~ .acordeon-conteiner p {
   height: 100%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: "aileron", sans-serif;
   font-weight: 400;
   color: #f2f2f2;
@@ -924,9 +952,17 @@ html {
   display: none;
 }
 
+@media (min-width: 1200px) {
+  .contact .info {
+    padding: 5rem 0;
+  }
+}
 .contact-text {
   width: 100%;
   align-self: center;
+  padding: 15px;
+  background-color: rgba(31, 27, 59, 0.6);
+  border-radius: 15px;
 }
 .contact-text .info_text_title {
   margin: 0 0 1.3em;
@@ -936,6 +972,7 @@ html {
   font-size: 1.1rem;
   text-align: center;
   font-weight: 300;
+  margin-top: 15px;
   margin-bottom: 0;
   width: 100%;
   text-align: center;
@@ -958,7 +995,12 @@ html {
 @media (min-width: 1200px) {
   .contact-text .contact_form {
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+    row-gap: 0;
   }
 }
 .contact-text .contact_form .contact_input {
@@ -971,19 +1013,33 @@ html {
   padding-left: 0.8rem;
   padding-bottom: 0.125rem;
 }
+@media (min-width: 1200px) {
+  .contact-text .contact_form .contact_input {
+    width: 45%;
+    max-width: 400px;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .contact-text .contact_form .contact_input:focus {
   border: none;
   outline: none;
 }
-.contact-text .contact_form .contact_input:nth-child(6) {
+.contact-text .contact_form .contact_input:nth-child(5) {
   height: 5em;
   line-height: 1.2em;
   padding-top: 0.5em;
   resize: none;
 }
+@media (min-width: 1200px) {
+  .contact-text .contact_form .contact_input:nth-child(5) {
+    min-width: 100%;
+    height: 5rem;
+  }
+}
 .contact-text .contact_form_btn {
-  width: 40%;
-  max-width: 170px;
+  width: 50%;
+  max-width: 150px;
   border: none;
   border-radius: 15px;
   font-weight: 500;
@@ -1005,6 +1061,8 @@ html {
 @media (min-width: 1200px) {
   .contact-text .contact_form_btn {
     height: 3.5rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
   }
 }
 .contact-text .contact_form_btn span {
@@ -1067,10 +1125,13 @@ html {
   .footer_text_agiliza {
     max-width: 350px;
     margin-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .footer_text_agiliza img {
-  width: 150px;
+  width: 200px;
   display: block;
   margin: 0 auto;
 }
@@ -1096,14 +1157,24 @@ html {
   }
 }
 .footer_text_contact h3 {
+  margin: 0 0 1.3em;
+  letter-spacing: 0.1em;
+  font-family: "futura", sans-serif;
   color: #3ed2c6;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   text-align: center;
+  font-weight: 300;
+}
+@media (min-width: 1200px) {
+  .footer_text_contact h3 {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .footer_text_contact h3 {
     margin-top: 0;
     text-align: left;
+    font-size: 1.7rem;
   }
 }
 .footer_text_contact a {
@@ -1142,27 +1213,39 @@ html {
   text-decoration: none;
 }
 .footer_text_menu h2 {
-  text-align: center;
-  font-size: 1.3rem;
+  margin: 0 0 1.3em;
+  letter-spacing: 0.1em;
+  font-family: "futura", sans-serif;
   color: #3ed2c6;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 300;
+}
+@media (min-width: 1200px) {
+  .footer_text_menu h2 {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .footer_text_menu h2 {
     text-align: right;
     margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 1rem;
   }
 }
 .footer .footer-CR {
   display: block;
   width: 100%;
   line-height: 1rem;
-  font-family: "aileron", sans-serif;
+  font-family: "futura", sans-serif;
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem 0;
   color: #5754c9;
   background-color: #f2f2f2;
   margin: 0;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */

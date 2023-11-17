@@ -31,10 +31,13 @@
             @include mixfun.media(1200px){
                 max-width: 350px;
                 margin-right: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             img{
-                width: 150px;
+                width: 200px;
                 display: block;
                 margin: 0 auto;
 
@@ -63,13 +66,13 @@
             }
 
             h3{
-                color: var.$c-primary;
-                font-size: 1.7rem;
-                text-align: center;
+                @include mixfun.titleH2(var.$c-primary);
+          
 
                 @include mixfun.media(1200px){
                     margin-top: 0;
                     text-align: left;
+                    font-size: 1.7rem;
                 }
             }
             a{
@@ -114,13 +117,13 @@
             }
 
             h2{
-                text-align: center;
-                font-size: 1.3rem;
-                color: var.$c-primary;
+                @include mixfun.titleH2(var.$c-primary);
 
                 @include mixfun.media(1200px){
                  text-align: right;
                  margin-top: 0;
+                 font-size: 1.5rem;
+                 line-height: 1rem;
                 }
             }
         }
@@ -130,13 +133,14 @@
         display: block;
         width: 100%;
         line-height: 1rem;
-        font-family: var.$f-fs;
+        font-family: var.$f-ff;
         font-size: 0.8rem;
         text-align: center;
         padding: 1rem 0;
         color: var.$c-secundary;
         background-color: var.$c-white;
         margin: 0;
+        font-weight: lighter;
     }
 
 

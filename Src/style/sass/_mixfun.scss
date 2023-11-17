@@ -37,8 +37,8 @@
 }
 
 @mixin button($gb,$fc,$ta){
-    width: 40%;
-    max-width: 170px;
+    width: 50%;
+    max-width: 150px;
     border: none;
     border-radius: 15px;
     font-weight: 500;
@@ -52,6 +52,8 @@
 
     @include media(1200px){
         height: 3.5rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
     }
 }
 
